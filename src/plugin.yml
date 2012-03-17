@@ -1,0 +1,9 @@
+name: ResMelt
+main: me.cnaude.resmelt.ResMelt
+version: 0.1
+author: Chris Naudé 
+description: Add "melt" flag to Residence
+website: http://dev.bukkit.org/server-mods/resmelt/
+harddepend: Residence
+permissions:
+
