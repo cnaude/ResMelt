@@ -37,6 +37,8 @@ public class ResMelt extends JavaPlugin {
                 pm.enablePlugin(p);
                 FlagPermissions.addResidenceOnlyFlag("melt");
                 FlagPermissions.addFlag("melt");
+                FlagPermissions.addResidenceOnlyFlag("form");
+                FlagPermissions.addFlag("form");
                 getServer().getPluginManager().registerEvents(eventListener, this);
             }
         }
@@ -53,15 +55,4 @@ public class ResMelt extends JavaPlugin {
     public void logError(String _message) {
         log.log(Level.SEVERE,String.format("%s %s",LOG_HEADER,_message));
     }
-    /*
-    public ResMelt getSConfig() {
-        return config;
-    }
-    
-    void loadConfig() {
-        getConfig().options().copyDefaults(true);
-        saveConfig();
-        config = new ResMeltConfig(this);
-    }
-   */
 }
