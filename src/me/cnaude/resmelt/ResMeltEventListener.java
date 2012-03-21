@@ -37,7 +37,7 @@ public class ResMeltEventListener implements Listener {
     }
     
     @EventHandler(priority = EventPriority.LOWEST)
-    public void onBlockMelt(BlockFormEvent event) {
+    public void onBlockForm(BlockFormEvent event) {
         if(event.isCancelled())
             return;
         ClaimedResidence res = Residence.getResidenceManager().getByLoc(event.getBlock().getLocation());
